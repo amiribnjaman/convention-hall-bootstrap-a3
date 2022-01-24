@@ -29,5 +29,52 @@ ul li a{
     font-size: 13px;
 }
 header .carousel-item img{
-    height: 450px;
+    background-size: cover;
+}
+
+/*----------Package Section----------*/
+.card-body{
+    flex: 0;
+}
+.package-section ul li svg{
+    background: #FEF5FA;
+    /* border-radius: 50%; */
+    padding: 2px;
+    color: #5243C2;
+}
+.package-section p{
+    color: #848199;
+}
+.package-section ul li{
+    color: #848199;
+}
+.package-section .special-card ul li, .package-section .special-card p{
+    color: #fff;
+}
+.package-section .btn{
+    background: #FEF5FA;
+    color: #5243C2; 
+}
+/* .special-card{
+    position: relative;
+}
+.special-card .card{
+    border-radius: 15px;
+    padding: 20px 10px;
+    width: 270px;
+
+}
+.special-card span{
+    position: absolute;
+    top: 0;
+    right: -22px;
+} */
+
+.special-card {
+    width: 280px;
+    transform: scale(1.2);
+    z-index: 100;
+}
+.special-card .card{
+    border-radius: 15px;
 }
