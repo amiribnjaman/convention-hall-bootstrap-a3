@@ -48,9 +48,6 @@ p{
     font-weight: 500;
     font-size: 14px;
 }
-header .carousel-item img{
-    background-size: cover;
-}
 .slider {
     width: 100%;
     height: 90vh;
