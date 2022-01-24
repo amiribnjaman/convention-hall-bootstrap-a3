@@ -33,6 +33,9 @@ p{
 .mt-50{
     margin-top: 50px;
 }
+.mt-70{
+    margin-top: 70px;
+}
 /*----------Header Style----------*/
 .navbar-brand h4{
     font-family: 'Ubuntu', sans-serif;
