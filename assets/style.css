@@ -11,7 +11,7 @@ ul li{
     list-style: none;
 }
 h1{
-    font-size: 48px;
+    font-size: 2rem;
 }
 p{
     font-size: 16px;
@@ -38,7 +38,6 @@ header .carousel-item img{
 }
 .package-section ul li svg{
     background: #FEF5FA;
-    /* border-radius: 50%; */
     padding: 2px;
     color: #5243C2;
 }
@@ -55,26 +54,19 @@ header .carousel-item img{
     background: #FEF5FA;
     color: #5243C2; 
 }
-/* .special-card{
-    position: relative;
+.normal-card{
+    max-width: 270px;
 }
-.special-card .card{
-    border-radius: 15px;
-    padding: 20px 10px;
-    width: 270px;
-
-}
-.special-card span{
-    position: absolute;
-    top: 0;
-    right: -22px;
-} */
-
 .special-card {
-    width: 280px;
+    max-width: 270px;
     transform: scale(1.2);
     z-index: 100;
 }
 .special-card .card{
     border-radius: 15px;
+}
+
+/*----------Client Section----------*/
+.client-section{
+    margin-top: 130px;
 }
