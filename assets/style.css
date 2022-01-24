@@ -7,14 +7,24 @@ body{
 .primary-color{
     color: #ED4C67;
 }
-ul li{
+ul li, ul li a{
     list-style: none;
+    text-decoration: none;
 }
 h1{
-    font-size: 2rem;
+    font-size: 2em;
+}
+h2{
+    font-size: 30px;
+}
+h5{
+    font-size: 18px;
+}
+h6{
+    font-size: 16px;
 }
 p{
-    font-size: 16px;
+    font-size: 14px;
 }
 /*----------Header Style----------*/
 .navbar-brand h4{
@@ -28,6 +38,8 @@ ul li a{
     font-weight: 500;
     font-size: 13px;
 }
+
+
 header .carousel-item img{
     background-size: cover;
 }
@@ -46,6 +58,13 @@ header .carousel-item img{
 }
 .package-section ul li{
     color: #848199;
+    font-size: 12px;
+}
+.package-section .btn{
+    font-size: 14px;
+}
+.special-card ul li, .special-card p{
+    font-size: 12px;
 }
 .package-section .special-card ul li, .package-section .special-card p{
     color: #fff;
