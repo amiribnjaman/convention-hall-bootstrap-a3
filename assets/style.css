@@ -27,6 +27,12 @@ h6{
 p{
     font-size: 14px;
 }
+.mt-130{
+    margin-top: 130px;
+}
+.mt-50{
+    margin-top: 50px;
+}
 /*----------Header Style----------*/
 .navbar-brand h4{
     font-family: 'Ubuntu', sans-serif;
@@ -39,13 +45,13 @@ ul li a{
     font-weight: 500;
     font-size: 13px;
 }
-
-
 header .carousel-item img{
     background-size: cover;
 }
-
 /*----------Package Section----------*/
+.navbar{
+    overflow-x: hidden;
+}
 .card-body{
     flex: 0;
 }
@@ -74,11 +80,10 @@ header .carousel-item img{
     background: #FEF5FA;
     color: #5243C2; 
 }
-.normal-card{
+.normal-card, .special-card{
     max-width: 270px;
 }
 .special-card {
-    max-width: 270px;
     transform: scale(1.2);
     z-index: 10;
     position: relative;
@@ -91,18 +96,9 @@ header .carousel-item img{
     top: 0;
     right: -15px;
 }
-
-/*----------Client Section----------*/
-.mt-130{
-    margin-top: 130px;
-}
-.mt-50{
-    margin-top: 50px;
-}
-
 /*----------Booking Section----------*/
 .booking-form{
-    background: url('./images/people.png');
+    background: url('./images/c2.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
