@@ -13,17 +13,17 @@
     <!--------Custom CSS---------->
     <link rel="stylesheet" href="./assets/style.css">
 
-    <title>Look-up | Convention</title>
+    <title>look-up | convention</title>
 </head>
 
 <body>
 
     <!----------Header Section---------->
-    <header class="vh-100">
+    <header class="vh-100" id="header">
         <!----------Header Nav---------->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light py-3">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#header">
                     <h4 class="fw-bold">
                         look<span class="primary-color">up</span> <span class="d-none d-sm-inline">convention</span>
 
@@ -37,16 +37,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav text-uppercase text-end mt-2 mt-lg-0 ms-auto mb-2 mb-lg-0">
                         <li class="nav-item px-1">
-                            <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
+                            <a class="nav-link text-dark" aria-current="page" href="#header">Home</a>
                         </li>
                         <li class="nav-item px-1">
-                            <a class="nav-link text-dark" aria-current="page" href="#">About Us</a>
+                            <a class="nav-link text-dark" aria-current="page" href="#package">Packages</a>
                         </li>
                         <li class="nav-item px-1">
-                            <a class="nav-link text-dark" aria-current="page" href="#">Contact Us</a>
+                            <a class="nav-link text-dark" aria-current="page" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link text-dark" aria-current="page" href="#faq">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Subscribe</a>
+                            <a class="nav-link active" aria-current="page" href="#booking">Book</a>
                         </li>
                     </ul>
                 </div>
@@ -68,12 +71,11 @@
                     <img src="./assets/images/b1.png" class="d-block w-100 h-100" alt="...">
                     <div class="carousel-caption d-block mb-3">
                         <div>
-                            <h1 class="">The perfect venue for your
-                                next event</h1>
+                            <h1 class="">We've done hundred+ marriage event.</h1>
                             <p class="w-75 mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                                 sint. Velit officia
                                 consequat duis enim velit </p>
-                            <a href="" class="btn btn-light text-primary px-4 fw-bold py-2">Book Now</a>
+                            <a href="#booking" class="btn btn-light text-primary px-4 fw-bold py-2">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -82,11 +84,11 @@
                     <div class="carousel-caption d-block mb-3">
                         <div>
                             <h1>The perfect venue for your
-                                next event</h1>
+                                next event.</h1>
                             <p class="w-75 mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                                 sint. Velit officia
                                 consequat duis enim velit </p>
-                            <a href="" class="btn btn-light text-primary px-4 fw-bold py-2">Book Now</a>
+                            <a href="#booking" class="btn btn-light text-primary px-4 fw-bold py-2">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -94,12 +96,11 @@
                     <img src="./assets/images/b3.jpg" class="d-block w-100 h-100" alt="...">
                     <div class="carousel-caption d-block mb-3">
                         <div>
-                            <h1>The perfect venue for your
-                                next event</h1>
+                            <h1>We offer corporate event as well.</h1>
                             <p class="w-75 mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                                 sint. Velit officia
                                 consequat duis enim velit </p>
-                            <a href="" class="btn btn-light text-primary px-4 fw-bold py-2">Book Now</a>
+                            <a href="#booking" class="btn btn-light text-primary px-4 fw-bold py-2">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -118,8 +119,22 @@
     </header>
 
     <main class="container my-5">
+        <!----------Toasts ---------->
+        <div class="toast d-block position-fixed top-md-50 end-md-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <strong class="me-auto">limited time Offer</strong>
+              <small>1 day remain.</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                We've 1 Offer for you. Check now
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+            </div>
+          </div>
         <!----------Packages Section---------->
-        <section class="my-5 package-section">
+        <section id="package" class="my-5 package-section">
             <h2 class="text-center mt-5">Our Packages</h2>
 
             <div class="row row-cols-1 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4 mt-md-5 mt-0">
@@ -238,7 +253,7 @@
                 </div>
                 <div class="col mx-auto d-flex justify-content-center special-card py-md-5">
 
-                    <div class="card d-flex justify-content-center text-white bg-primary shadow-lg py-5 border-0 h-100">
+                    <div class="card d-flex justify-content-center text-white bg-primary shadow-lg pt-1 pb-0 border-0 h-100">
 
                         <span class=" px-3 py-2 translate-middle badge rounded-pill bg-danger">
                             popular</span>
@@ -291,7 +306,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="text-center mb-3">
+                        <div class="text-center mb-3 mb-md-0">
                             <a class="btn rounded-pill d-inline-block px-5">Choose Plan</a>
                         </div>
                     </div>
@@ -357,8 +372,8 @@
         </section>
 
         <!----------Clients Opinion---------->
-        <section class="mt-130">
-            <h2 class="text-center mt-5">Happy Clients Says</h2>
+        <section class="mt-130" id="about">
+            <h2 class="text-center mt-0 mt-md-3">Happy Clients Says</h2>
             <div class="row mt-5 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col text-center">
                     <div class="card border-0 shadow-lg rounded-3">
@@ -418,7 +433,7 @@
         </section>
 
         <!----------FAQ Section---------->
-        <section class="mt-130">
+        <section id="faq" class="mt-130">
             <h2 class="text-center mb-5">Frequently Asked Questions</h2>
             <div class="row g-5">
                 <div class="col-lg-6 order-md-2">
@@ -471,8 +486,7 @@
                                     <p>
                                         1. Due to limited seating, we request that you cancel at least 48 hours before a scheduled. <br>
                                         2. Cancellations made 7 days or more in advance of the event date. <br>
-                                        3. I understand that I am holding a spot so reservations for this event are nonrefundable. <br>
-                                        4. If your cancellation is at least 24 hours in advance of the event, you will receive a full refund.
+                                        3. If your cancellation is at least 24 hours in advance of the event, you will receive a full refund.
                                     </p>
                                 </div>
                             </div>
@@ -502,7 +516,7 @@
         </section>
 
         <!----------Booking Section---------->
-        <section class="booking-section text-center mt-130">
+        <section id="booking" class="booking-section text-center mt-130">
 
             <h2 class=" mb-4">Book a day</h2>
             <p class="fs-5 mb-5">If you would like to get our services. Please, Book a day by fill the form below.</p>
@@ -546,13 +560,13 @@
                 <p>&copy; look<span class="primary-color">up.</span> All right reserved.</p>
                 <div class="d-flex justify-content-center mb-3 mb-md-0">
                     <ul class="text-md-start ms-4 ms-md-0 d-flex justify-content-md-around p-0 ">
-                        <li class="pe-2 pe-md-0"><a href="" class="text-white fs-6 pe-4"><i
+                        <li class="pe-2 pe-md-0"><a href="https://www.programming-hero.com/blog/" target="_blank" class="text-white fs-6 pe-4"><i
                                     class="fas fa-globe"></i></a></li>
-                        <li class="pe-2 pe-md-0"><a href="" class="text-white fs-6 pe-4"><i
+                        <li class="pe-2 pe-md-0"><a href="https://www.facebook.com/programmingHero/" target="_blank" class="text-white fs-6 pe-4"><i
                                     class="fab fa-facebook-f"></i></a></li>
                         <li class="pe-2 pe-md-0"><a href="" class="text-white fs-6 pe-4"><i
                                     class="fab fa-twitter"></i></a></li>
-                        <li class="pe-2 pe-md-0"><a href="" class="text-white fs-6 pe-4"><i
+                        <li class="pe-2 pe-md-0"><a href="https://www.youtube.com/c/ProgrammingHero" target="_blank" class="text-white fs-6 pe-4"><i
                                     class="fab fa-youtube"></i></a></li>
 
                     </ul>
@@ -568,9 +582,10 @@
                 </ul>
             </div>
             <div class="apps">
+                <h5 class="mb-2">Get App</h5>
                 <ul class="ps-0">
                     <li><a href=""><img src="./assets/icons/app-store.png" alt=""></a></li>
-                    <li class="mt-2"><a href=""><img src="./assets/icons/google-play.png" alt=""></a></li>
+                    <li class="mt-2"><a href="https://play.google.com/store/apps/details?id=com.learnprogramming.codecamp" target="_blank"><img src="./assets/icons/google-play.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
