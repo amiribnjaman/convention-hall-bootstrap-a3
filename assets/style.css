@@ -1,0 +1,17 @@
+
+/*----------Common Styles----------*/
+.primary-color{
+    color: #ED4C67;
+}
+ul li{
+    list-style: none;
+}
+
+/*----------Header Style----------*/
+ul li a{
+    font-weight: 500;
+    font-size: 13px;
+}
+header .carousel-item img{
+    height: 450px;
+}
