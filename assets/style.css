@@ -52,6 +52,14 @@ p{
     width: 100%;
     height: 90vh;
 }
+.carousel-inner{
+    margin-top: 80px;
+    position: relative;
+}
+.carousel-indicators{
+    position: absolute;
+    bottom: 25px;
+}
 /*----------Package Section----------*/
 .navbar{
     overflow-x: hidden;
